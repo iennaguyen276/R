@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VYZZOV Plugin</title>
+    <style>
+      body { font-family: Inter, system-ui, sans-serif; margin: 0; padding: 16px; }
+      button { padding: 8px 12px; border-radius: 8px; border: 1px solid #e5e7eb; }
+    </style>
+  </head>
+  <body>
+    <h3>VYZZOV Design System</h3>
+    <p>Генерация токенов и компонентов в Figma</p>
+    <button id="run">Создать стили</button>
+    <script>
+      document.getElementById('run').addEventListener('click', () => {
+        parent.postMessage({ pluginMessage: { type: 'generate-styles' } }, '*');
+      });
+    </script>
+  </body>
+</html>

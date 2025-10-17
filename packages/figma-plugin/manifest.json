@@ -1,0 +1,9 @@
+{
+  "name": "VYZZOV Design System Generator",
+  "id": "vyzzov-design-system-generator",
+  "api": "1.0.0",
+  "editorType": ["figma"],
+  "main": "dist/main.js",
+  "ui": "ui/index.html",
+  "enableProposedApi": false
+}
