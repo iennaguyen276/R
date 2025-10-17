@@ -1,0 +1,20 @@
+{
+  "name": "@vyzzov/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "vyzzov": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsx watch src/index.ts",
+    "test": "jest -c ../../jest.config.cjs -w=1"
+  },
+  "dependencies": {
+    "@vyzzov/analysis": "*",
+    "@vyzzov/tokens": "*",
+    "@vyzzov/exporters": "*",
+    "dotenv": "^16.4.5"
+  }
+}

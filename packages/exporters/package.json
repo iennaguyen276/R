@@ -1,0 +1,13 @@
+{
+  "name": "@vyzzov/exporters",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsx watch src/index.ts",
+    "test": "jest -c ../../jest.config.cjs -w=1"
+  }
+}

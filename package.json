@@ -1,0 +1,37 @@
+{
+  "name": "vyzzov-design-system",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Automated Figma design system generator for the ВЫЗОВ award (Cursor AI + Perplexity + Figma Plugin)",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run -ws build",
+    "dev": "npm run -ws dev",
+    "test": "npm run -ws test",
+    "lint": "npm run -ws lint",
+    "format": "npm run -ws format",
+    "cli": "node --import=tsx packages/cli/src/index.ts",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.7.5",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "husky": "^9.1.6",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "esbuild": "^0.23.1"
+  }
+}

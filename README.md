@@ -1,27 +1,21 @@
+## ВЫЗОВ — Автоматическая дизайн‑система (Cursor + Perplexity + Figma)
 
-# Free RDP 6 HOURS
+Проект генерирует полную дизайн‑систему и макеты сайта премии «ВЫЗОВ» в Figma, используя Cursor AI, Perplexity API и Figma Plugin API.
 
+### Пакеты
+- `packages/analysis`: анализ через Perplexity API, структурированные инсайты
+- `packages/tokens`: генерация дизайн‑токенов (светлая/тёмная темы)
+- `packages/exporters`: экспорт токенов в CSS и JSON
+- `packages/figma-plugin`: Figma плагин (стили, компоненты, страницы, прототипы)
+- `packages/cli`: CLI‑оркестратор
 
+### Быстрый старт
+1. Скопируйте `.env.example` в `.env` и заполните ключи
+2. Установите зависимости: `npm i`
+3. Запустите: `npm run cli` и следуйте подсказкам
 
-### HOW TO CREATE
-```
-> Press the Fork button to create RDP (For Android / HP Users, Please Use Desktop Mode).
+### Переменные окружения
+См. `.env.example`.
 
-> visit https://dashboard.ngrok.com to get NGROK_AUTH_TOKEN
-
-> Inside this Repo Go to Settings> Secrets> New repository secret
-
-> Fill in the Name: Enter NGROK_AUTH_TOKEN
-
-> Fill in Value: Visit https://dashboard.ngrok.com/auth/your-authtoken Copy and Paste in the value
-
-> Press Add secret 
-
-> Go to Action> CI> Run workflow
-
-> Refresh Web and go to CI> build
-
-> Press Down facing arrow button "RDP INFO LOGIN" To Get IP, User, Password.
-```
-### WARN
-THIS IS ONLY FOR EDUCATIONAL PURPOSES DON'T USE FOR MINING OR ILLEGAL USE
+### Лицензия
+MIT
